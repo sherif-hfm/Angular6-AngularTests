@@ -1,0 +1,27 @@
+<div class="w3-modal" [style.display]="visiable">
+    <div class="w3-modal-content " style="width:30%" >
+        <header class="w3-container w3-teal"> 
+            <span (click)="buttonClick(false)" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Modal Header</h2>
+          </header>
+      <div class="w3-container ">
+        <p>{{Message}}</p>
+        <div class="w3-row">
+          <div class="w3-col m6  w3-center">
+                  <span (click)="buttonClick(true)" class="w3-button w3-red w3-center" style="width:30%">ok</span>
+          </div>
+          <div class="w3-col m6 w3-center">
+              <span (click)="buttonClick(false)" class="w3-button w3-blue w3-center" >Cancel</span>
+          </div>
+        </div>
+            
+          
+            
+          
+      </div>
+      <footer class="w3-container w3-teal">
+          <p>Modal Footer</p>
+        </footer>
+    </div>
+  </div>
